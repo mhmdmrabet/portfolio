@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const Nav = () => {
   const [hiddenMobileMenu, setHiddenMobileMenu] = useState(true);
@@ -9,11 +10,7 @@ export const Nav = () => {
         <div className="flex justify-between">
           <div className="flex space-x-4">
             <div className="">
-              <a
-                href="https://github.com/mhmdmrabet"
-                className="flex items-center py-5 px-2 text-white hover:text-gray-300"
-                target={'_blank'}
-              >
+              <Link to="/" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-0.2 text-blue-400"
@@ -29,12 +26,15 @@ export const Nav = () => {
                   />
                 </svg>
                 <span className="font-bold">Mohamed</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-1 ">
             <div className="flex space-x-4">
-              <a href="#" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
+              <Link
+                to="/about"
+                className="flex items-center py-5 px-2 text-white hover:text-gray-300"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-1 text-blue-400"
@@ -50,8 +50,11 @@ export const Nav = () => {
                   />
                 </svg>
                 <span className="font-bold">About</span>
-              </a>
-              <a href="#" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
+              </Link>
+              <Link
+                to="/projects"
+                className="flex items-center py-5 px-2 text-white hover:text-gray-300"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-1 text-blue-400"
@@ -67,7 +70,7 @@ export const Nav = () => {
                   />
                 </svg>
                 <span className="font-bold">Projects</span>
-              </a>
+              </Link>
             </div>
           </div>
           {/* MOBILE BUTTON */}
@@ -112,7 +115,7 @@ export const Nav = () => {
       {/* MOBILE MENU */}
       <div className={classNameMobileMenu}>
         <div className="block py-2 text-sm text-center text-white space-x-4 space-y-2">
-          <a href="#" className="flex space-x-4 justify-center hover:text-gray-300">
+          <Link to="about" className="flex space-x-4 justify-center hover:text-gray-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-blue-400"
@@ -128,8 +131,8 @@ export const Nav = () => {
               />
             </svg>
             <span className="font-bold">About</span>
-          </a>
-          <a href="#" className="flex space-x-4 justify-center hover:text-gray-300">
+          </Link>
+          <Link to="projects" className="flex space-x-4 justify-center hover:text-gray-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-blue-400"
@@ -145,7 +148,7 @@ export const Nav = () => {
               />
             </svg>
             <span className="font-bold">Projects</span>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

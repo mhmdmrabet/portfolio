@@ -3,11 +3,13 @@ export const HomePage = () => {
     <div className="flex flex-col items-center text-white text-3xl">
       <img
         src="https://avatars.githubusercontent.com/u/58339336?v=4"
-        className="rounded-full mb-4 h-4/5 w-4/5 border-4 border-blue-400/75"
+        className="rounded-full mb-4 w-4/5 border-4 border-blue-400/75"
         alt="avatar"
       />
-      <p className="">Hi 👋, I'm Mohamed M'rabet</p>
-      <p className="">A passionate developer from Paris.</p>
+      <div className="text-center">
+        <p className="">Hi 👋, I'm Mohamed M'rabet</p>
+        <p className="">A passionate developer from Paris.</p>
+      </div>
       <div className=" flex space-x-4 p-4">
         <a href="https://github.com/mhmdmrabet" target="blank">
           <img
