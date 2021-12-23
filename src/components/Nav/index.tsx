@@ -9,7 +9,11 @@ export const Nav = () => {
         <div className="flex justify-between">
           <div className="flex space-x-4">
             <div className="">
-              <a href="#" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
+              <a
+                href="https://github.com/mhmdmrabet"
+                className="flex items-center py-5 px-2 text-white hover:text-gray-300"
+                target={'_blank'}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-0.2 text-blue-400"
