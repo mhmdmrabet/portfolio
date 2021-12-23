@@ -10,7 +10,11 @@ export const Nav = () => {
         <div className="flex justify-between">
           <div className="flex space-x-4">
             <div className="">
-              <Link to="/" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
+              <Link
+                replace={true}
+                to="/"
+                className="flex items-center py-5 px-2 text-white hover:text-gray-300"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6 mr-0.2 text-blue-400"
@@ -32,6 +36,7 @@ export const Nav = () => {
           <div className="hidden md:flex items-center space-x-1 ">
             <div className="flex space-x-4">
               <Link
+                replace={true}
                 to="/about"
                 className="flex items-center py-5 px-2 text-white hover:text-gray-300"
               >
@@ -52,6 +57,7 @@ export const Nav = () => {
                 <span className="font-bold">About</span>
               </Link>
               <Link
+                replace={true}
                 to="/projects"
                 className="flex items-center py-5 px-2 text-white hover:text-gray-300"
               >
@@ -115,7 +121,11 @@ export const Nav = () => {
       {/* MOBILE MENU */}
       <div className={classNameMobileMenu}>
         <div className="block py-2 text-sm text-center text-white space-x-4 space-y-2">
-          <Link to="about" className="flex space-x-4 justify-center hover:text-gray-300">
+          <Link
+            replace={true}
+            to="about"
+            className="flex space-x-4 justify-center hover:text-gray-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-blue-400"
@@ -132,7 +142,11 @@ export const Nav = () => {
             </svg>
             <span className="font-bold">About</span>
           </Link>
-          <Link to="projects" className="flex space-x-4 justify-center hover:text-gray-300">
+          <Link
+            replace={true}
+            to="projects"
+            className="flex space-x-4 justify-center hover:text-gray-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-blue-400"
