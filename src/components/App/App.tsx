@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { HomePage } from '../HomePage';
+import { NotFound } from '../NotFound';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div className="h-screen text-white">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
